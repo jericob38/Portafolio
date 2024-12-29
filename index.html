@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing my work and skills as a developer">
+    <title>Miguel Andresen | Desarrollador Web | Lider de Desarrollo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+<body class="light-mode">
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mi portafolio</div>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            <ul class="nav-links">
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="profile.png" alt="Mi imagen" class="imagen-estilizada">
+            <h1>Hola, me llamo <p class="highlight">Miguel Jose Andresen Bustamante</p>
+            </h1>
+            <p class="subtitle">Desarrollador Full Stack</p>
+            <p class="description">Creo experiencias web hermosas y funcionales</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Contáctame</a>
+                <a href="Miguel_José_Andresen_Bustamante_-_Ingeniero_de_Sistemas__Software_Development__Development_Leader.pdf"
+                    class="btn secondary" download>Descargar CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Acerca de mí</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-text">
+                        <div class="personal-info">
+                            <p><b>Nacionalidad: <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg"
+                                        alt="Bandera de Venezuela" width="15" height="auto"></b> Venezolano </p>
+                            <p><b>Ubicación:</b> Barrio Obrero Calle 12, 5001, San Cristóbal, Venezuela</p>
+                            <p><b>Teléfono:</b> +57 312 3263849</p>
+                            <p><b>Email:</b> <a href="mailto:jericob38@gmail.com">jericob38@gmail.com</a></p>
+                            <p><b>LinkedIn:</b> <a
+                                    href="https://www.linkedin.com/in/miguel-jose-andresen-bustamante-bb2a53182/"
+                                    target="_blank">Perfil de LinkedIn</a></p>
+                        </div>
+                        <div class="resume-info">
+                            <p>Ingeniero de Sistemas con experiencia sólida en el desarrollo de soluciones tecnológicas
+                                enfocadas en la optimización de procesos y la implementación de sistemas críticos para
+                                diversas industrias.
+                                Especialista en liderar equipos multidisciplinarios, con un enfoque en resultados,
+                                mejora de eficiencias y reducción de costos. Poseo un carácter dinámico
+                                y habilidades avanzadas en la resolución de problemas y toma de decisiones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="technical-skills">
+                <h3>Habilidades Técnicas</h3>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-php"></i>
+                        <p>PHP</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-angular"></i>
+                        <p>Angular</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-laravel"></i>
+                        <p>Laravel</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <p>MySql</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-wordpress"></i>
+                        <p>Wordpress</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <p>ASP.net</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <p>C#</p>
+                    </div>
+                </div>
+            </div>
+            <div class="soft-skills">
+                <h3>Habilidades Blandas</h3>
+                <div class="soft-skills-items">
+                    <ul>
+                        <li>Resolución de Problemas</li>
+                        <li>Colaboración en Equipo</li>
+                        <li>Comunicación</li>
+                        <li>Gestión del Tiempo</li>
+                        <li>Adaptabilidad</li>
+                        <li>Liderazgo Técnico</li>
+                        <li>Transformación Digital</li>
+                        <li>Visión Estratégica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image" style="background-color: #062C3A;">
+                    <img src="logo-egis.png" alt="logo egis">
+                </div>
+                <div class="project-info">
+                    <h3>Gestión de presupuestos</h3>
+                    <p><strong>Desarrollado e implementado para PAYC SAS - EGIS</strong></p>
+                    <p class="project-summary">está diseñado para crear y administrar presupuestos detallados para proyectos de construcción.
+                    </p>
+                    <p><strong>Resultados:</strong> Reducción de errores en un 25% y reduccion del tiempo de respuesta un 35%.</p>
+                    <a class="btn-seemore" href="javascript:void(0);" id="show-more" onclick="showModal(1)">Ver
+                        más...</a>
+                    <div class="project-tech">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>SQL Server</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>ASP.net</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>C#</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-color: #062C3A;">
+                    <img src="logo-egis.png" alt="logo egis">
+                </div>
+                <div class="project-info">
+                    <h3>Control de Proyectos</h3>
+                    <p><strong>Desarrollado e implementado para PAYC SAS - EGIS</strong></p>
+                    <p class="project-summary">es un sistema diseñado para optimizar la administración de obras mediante una gestión integral del presupuesto y 
+                        los contratos.
+                    </p>
+                    <p><strong>Resultados:</strong> Reducción de errores en un 25% y mejora de precisión en auditorías.</p>
+                    <a class="btn-seemore" href="javascript:void(0);" id="show-more" onclick="showModal(2)">Ver
+                        más...</a>
+                    <div class="project-tech">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>SQL Server</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>ASP.net</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>C#</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-color: #062C3A;">
+                    <img src="logo-egis.png" alt="logo egis">
+                </div>
+                <div class="project-info">
+                    <h3>Gestion de contrataciones</h3>
+                    <p><strong>Desarrollado e implementado para PAYC SAS - EGIS</strong></p>
+                    <p class="project-summary"> es un sistema diseñado para automatizar y estructurar el proceso de selección y contratación de proponentes 
+                        o colaboradores.
+                    </p>
+                    <p><strong>Resultados:</strong> centralizacíon de la información y aumentando la eficiencia en un 35%</p>
+                    <a class="btn-seemore" href="javascript:void(0);" id="show-more" onclick="showModal(3)">Ver
+                        más...</a>
+                    <div class="project-tech">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>SQL Server</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>ASP.net</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>C#</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-color: #062C3A;">
+                    <img src="logo-adn.png" alt="ADN SOFTWARE" style="width: 70%;margin-left: 15%;">
+                </div>
+                <div class="project-info">
+                    <h3>ADN SOFTWARE</h3>
+                    <p><strong>Desarrollado en Sistemas ADN</strong></p>
+                    <p class="project-summary">bajo mi liderazgo fue adaptada y mejorada para cumplir con los requerimientos del mercado colombiano.</p>
+                    <p><strong>Resultados:</strong> Centralización de procesos contables y de facturación, reducción de errores en un 53%, y aumento de la eficiencia operativa del sistema en un 45%.</p>
+                    <a class="btn-seemore" href="javascript:void(0);" id="show-more" onclick="showModal(4)">Ver
+                        más...</a>
+                    <div class="project-tech">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <p>xBase</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-regular fa-file-code"></i>
+                            <p>FastReport</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>MySql</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-color: #062C3A;">
+                    <img src="logo-WordPress.png" alt=" logo Wordpress">
+                </div>
+                <div class="project-info">
+                    <h3>Freelance</h3>
+                    <p><strong> Desarrollo de Paginas Web y Pluggins para distintas empresas</strong></p>
+                    <p class="project-summary">Desarrollé soluciones web personalizadas para el sector inmobiliario.</p>
+                    <p><strong>Resultados:</strong>Mejora del rendimiento web en un 40% mediante soluciones personalizadas con PHP, Angular y Laravel, y optimización de la experiencia del usuario en WordPress con plugins avanzados.</p>
+                    <a class="btn-seemore" href="javascript:void(0);" id="show-more" onclick="showModal(5)">Ver
+                        más...</a>
+                    <div class="project-tech">
+                        <div class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <p>PHP</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <p>Angular</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-laravel"></i>
+                            <p>Laravel</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <p>MySql</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-wordpress"></i>
+                            <p>Wordpress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="experience-content">
+            <h2>Experiencia</h2>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="experience-text">
+                        <div class="bussines-info">
+                            <p><b>País: <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/320px-Flag_of_Colombia.svg.png"
+                                        alt="Bandera de Colombia" width="15" height="auto"></b> Colombia </p>
+                            <p><b>Ubicación y tiempo:</b> Bogotá - Enero 2023 al presente</p>
+                            <p><b>Empresa:</b> EGIS (anteriormente PAYC SAS)</p>
+                            <p><b>Cargo:</b>Líder de Innovación</p>
+                        </div>
+                        <div class="resume-info">
+                            <p>● Incrementé mi participación en la transformación digital de la empresa,
+                                liderando proyectos clave en Colombia.
+                            </p>
+                            <p>● Continué optimizando el uso de herramientas tecnológicas desarrolladas
+                                previamente y expandí su funcionalidad para alinearlas con los objetivos
+                                globales de EGIS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-text">
+                        <div class="bussines-info">
+                            <p><b>País: <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/320px-Flag_of_Colombia.svg.png"
+                                        alt="Bandera de Colombia" width="15" height="auto"></b> Colombia </p>
+                            <p><b>Ubicación y tiempo:</b> Bogotá - Septiembre 2020 a Enero 2023</p>
+                            <p><b>Empresa:</b> PAYC SAS </p>
+                            <p><b>Cargo:</b>Director de Desarrollo</p>
+                        </div>
+                        <div class="resume-info">
+                            <p>● Diseñé e implementé un software de control presupuestal que permitió
+                                gestionar los gastos de proyectos de acuerdo a contratos y cortes de obra,
+                                optimizando procesos críticos.
+                            </p>
+                            <p>● Desarrollé un sistema web para contrataciones, centralizando información y
+                                aumentando la eficiencia administrativa en un 35%.
+                            </p>
+                            <p>● Implementé un software complementario para auditorías en obra, mejorando la
+                                precisión en revisiones y reduciendo errores en un 25%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-text">
+                        <div class="bussines-info">
+                            <p><b>País: <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/320px-Flag_of_Colombia.svg.png"
+                                        alt="Bandera de Colombia" width="15" height="auto"></b> Colombia </p>
+                            <p><b>Ubicación y tiempo:</b> Bogotá - Diciembre 2018 a Septiembre 2020</p>
+                            <p><b>Empresa:</b> Freelance </p>
+                            <p><b>Cargo:</b>Desarrollador</p>
+                        </div>
+                        <div class="resume-info">
+                            <p>● Creé páginas web personalizadas para el sector inmobiliario, utilizando
+                                tecnologías como PHP, Angular y Laravel.
+                            </p>
+                            <p>● Desarrollé plugins personalizados para WordPress, integrando funcionalidades
+                                avanzadas en sitios web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-text">
+                        <div class="bussines-info">
+                            <p><b>País: <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg"
+                                        alt="Bandera de Venezuela" width="15" height="auto"></b> Venezuela </p>
+                            <p><b>Ubicación y tiempo:</b> San Cristóbal - Marzo 2016 a Diciembre 2018</p>
+                            <p><b>Empresa:</b> Sistemas ADN </p>
+                            <p><b>Cargo:</b>Líder de Desarrollo</p>
+                        </div>
+                        <div class="resume-info">
+                            <p>● Lideré la adaptación del sistema contable para el mercado colombiano,
+                                implementando normativas NIIF y un módulo de facturación electrónica.
+                            </p>
+                            <p>● Coordiné y colaboré en el desarrollo de nuevos módulos contables, logrando la
+                                expansión del sistema a nuevos mercados.
+                            </p>
+                            <p>● Supervisé un equipo de desarrollo, garantizando la entrega oportuna y eficiente
+                                de productos de software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-text">
+                        <div class="bussines-info">
+                            <p><b>País: <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg"
+                                        alt="Bandera de Venezuela" width="15" height="auto"></b> Venezuela </p>
+                            <p><b>Ubicación y tiempo:</b> San Cristóbal - Enero 2015 a Diciembre Febrero 2016</p>
+                            <p><b>Empresa:</b> Corpotachira </p>
+                            <p><b>Cargo:</b>Encargado del departamento de TI</p>
+                        </div>
+                        <div class="resume-info">
+                            <p>● Administré la infraestructura tecnológica, incluyendo servidores DNS, redes, cámaras de seguridad y equipos informáticos, 
+                                garantizando su correcto funcionamiento mediante mantenimiento preventivo y correctivo.
+                            </p>
+                            <p>● Implementé una plataforma de administración desarrollada por la gobernación, apliqué políticas de seguridad informática para 
+                                proteger datos sensibles y optimicé recursos tecnológicos, logrando reducir costos operativos.
+                            </p>
+                            <p>● Brindé soporte técnico a usuarios, resolviendo problemas críticos y mejorando la eficiencia operativa, además de capacitar al 
+                                personal en el uso de nuevas tecnologías.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>¿Quieres contactarme? ¡Envíame un correo!</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombres y apellidos</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/jericob38"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/miguel-andresen-bustamante-bb2a53182/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/jericob38"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="social-links">
+            <span>Tecnologías utilizadas en este portafolio </span><br>
+            <i class="fab fa-html5"></i> <span> HTLM5 </span> <i class="fab fa-css3-alt"></i> <span> CSS3 </span> <i class="fab fa-js"></i> <span> JavaScript </span>
+        </div>
+        <p>&copy; 2024 Miguel Andresen. All rights reserved.</p>
+    </footer>
+
+    <div class="modal" id="ModalSeeMore">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h3 id="full-title"></h3>
+                <h3 >Desarrollado e Implementado para</h3>
+                <img id="img-logo-full" src="" alt="logo egis">
+                <p id="full-text">                   
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
