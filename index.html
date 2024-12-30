@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio showcasing my work and skills as a developer">
+    <meta name="description" content="Miguel Andresen | Desarrollador Web | Lider de Desarrollo">
     <title>Miguel Andresen | Desarrollador Web | Lider de Desarrollo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
@@ -39,7 +39,7 @@
             <h1>Hola, me llamo <p class="highlight">Miguel Jose Andresen Bustamante</p>
             </h1>
             <p class="subtitle">Desarrollador Full Stack</p>
-            <p class="description">Creo experiencias web hermosas y funcionales</p>
+            <p class="description">Diseño y desarrollo de experiencias web innovadoras y ágiles</p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn primary">Contáctame</a>
                 <a href="Miguel_José_Andresen_Bustamante_-_Ingeniero_de_Sistemas__Software_Development__Development_Leader.pdf"
@@ -499,7 +499,14 @@
                     <label for="message">Mensaje</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" class="btn primary">Enviar Mensaje</button>
+                <div class="form-group" style="display: flex;">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" required style="width: auto;margin-right: 10px;">
+                    <label for="privacy-policy" style="margin-bottom: 0;">
+                        He leído y acepto la 
+                        <a id="privacy-link" onclick="showModalPrivacy()">Política de privacidad</a>
+                    </label>
+                </div>
+                <button type="submit" style="font-size: 16px;" class="btn primary" id="submit-button">Enviar Mensaje</button>
             </form>
         </div>
     </section>
@@ -531,10 +538,44 @@
                 <p id="full-text">
                 </p>
             </div>
-
         </div>
     </div>
 
+    <div class="modal" id="privacyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Política de Privacidad y Tratamiento de Datos Personales</h2>
+            </div>
+            <div class="modal-body">            
+                <div id="full-text-privacy">
+                    <p>
+                        Miguel José Andresen Bustamante, identificado con el correo <a href="mailto:jericob38@gmail.com">jericob38@gmail.com</a>, se compromete a garantizar la confidencialidad y seguridad de los datos personales que usted, como usuario, nos proporcione a través del formulario de contacto disponible en este sitio web.
+                    </p>
+                    <h3>Finalidad del Tratamiento de Datos</h3>
+                    <p>
+                        Los datos personales que se recolectan (nombres y apellidos, correo electrónico y mensaje) tienen como única finalidad establecer un canal de comunicación para responder a sus solicitudes o consultas. Estos datos no serán almacenados ni utilizados para ningún otro propósito.
+                    </p>
+                    <h3>Modalidad de Tratamiento</h3>
+                    <p>
+                        Los datos que usted nos proporcione serán enviados directamente a la dirección de correo electrónico <a href="mailto:jericob38@gmail.com">jericob38@gmail.com</a> y no serán almacenados en ninguna base de datos, sistema o archivo adicional.
+                    </p>
+                    <h3>Derechos del Titular de los Datos</h3>
+                    <ul>
+                        <li>Conocer, actualizar y rectificar sus datos personales.</li>
+                        <li>Revocar la autorización otorgada para el tratamiento de sus datos.</li>
+                    </ul>
+                    <p>
+                        Para ejercer cualquiera de estos derechos, puede contactarme directamente a través del correo <a href="mailto:jericob38@gmail.com">jericob38@gmail.com</a>.
+                    </p>
+                    <h3>Aceptación</h3>
+                    <p>
+                        Al marcar la casilla de aceptación de la política de privacidad, usted declara que ha leído y comprendido los términos aquí expuestos, y consiente de manera expresa el tratamiento de sus datos personales conforme a lo descrito.
+                    </p>
+                    <button type="button" class="btn primary" onclick="closeModalPrivacy()" style="margin-top: 15px;"> Aceptar y Cerrar </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

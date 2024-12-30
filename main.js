@@ -4,6 +4,10 @@ const navLinks = document.querySelector('.nav-links');
 const themeToggle = document.querySelector('.theme-toggle');
 const contactForm = document.getElementById('contact-form');
 contactForm.reset();
+const sections = document.querySelectorAll("section");
+const navLinksList = document.querySelectorAll('.nav-links a');
+const privacyPolicyCheckbox = document.getElementById('privacy-policy');
+const submitButton = document.getElementById('submit-button');
 
 // Toggle Mobile Menu
 menuToggle.addEventListener('click', () => {
@@ -54,6 +58,13 @@ document.querySelectorAll('section').forEach(section => {
 // Contact Form
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    if (!privacyPolicyCheckbox.checked) {
+        alert('Debes aceptar la Política de privacidad antes de enviar el formulario.');
+        return;
+    }
+    submitButton.disabled = true;
+    submitButton.textContent = 'Enviando...';
     emailjs.init({
         publicKey: 'J1dZI4-EtSjZDKCF1',
         blockHeadless: true, 
@@ -79,6 +90,11 @@ contactForm.addEventListener('submit', (e) => {
         })
         .catch(error => {
             alert("Hubo un problema al enviar el mensaje.");
+        })
+        .finally(() => {
+            // Reactivar el botón
+            submitButton.disabled = false;
+            submitButton.textContent = 'Enviar Mensaje';
         });
 });
 
@@ -123,4 +139,39 @@ function showModal(modal) {
 // Función para cerrar el modal
 function closeModal() {
     document.getElementById("ModalSeeMore").style.display = "none";
+}
+
+function setActiveLink() {
+    let currentSection = "";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            currentSection = section.getAttribute("id");
+        }
+    });
+
+    // Remueve la clase activa de todos los enlaces
+    navLinksList.forEach((link) => {
+        link.classList.remove("active");
+        const href = link.getAttribute("href");
+        // Validar si href no es null antes de usarlo
+        if (href && href.includes(currentSection)) {
+            link.classList.add("active");
+        }
+    });
+}
+
+// Escucha el evento de scroll para actualizar la clase activa
+window.addEventListener("scroll", setActiveLink);
+
+//politica de privacidad
+function showModalPrivacy() {
+    document.getElementById("privacyModal").style.display = "block";
+}
+
+// Función para cerrar el modal
+function closeModalPrivacy() {
+    document.getElementById("privacyModal").style.display = "none";
 }

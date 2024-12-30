@@ -89,6 +89,11 @@ h2 {
     display: none;
 }
 
+.nav-links .active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -138,6 +143,7 @@ h2 {
     transition: var(--transition);
     margin: 0.5rem;
     border: none;
+    cursor: pointer;
 }
 
 .btn.primary {
@@ -433,6 +439,27 @@ section {
     height: calc(80px);
     margin-bottom: calc(15px);
 }
+#privacy-link{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+#privacyModal .modal-content{
+    margin: 7% auto;
+    width: 50%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+#privacyModal ul{
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+#full-text-privacy{
+    text-align: justify;
+}
+#full-text-privacy h3{
+    margin-top: 15px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
